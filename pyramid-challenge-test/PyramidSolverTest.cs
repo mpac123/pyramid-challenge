@@ -51,6 +51,8 @@ namespace pyramid_challenge_test
             int sum5 = 8;
             int[] path5 = new int[] {2, 3, 2, 1};
             yield return new object[] { array5, sum5, path5 };
+            
+            yield return new object[] { new int[,]{{1}}, 1, new int[]{1}};
         } 
 
 

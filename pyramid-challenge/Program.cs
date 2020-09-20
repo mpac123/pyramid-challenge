@@ -24,6 +24,11 @@ namespace pyramid_challenge
                 return;
             }
 
+            if (array.GetLength(0) < 1) {
+                Console.WriteLine("File with input data cannot be empty.");
+                return;
+            }
+
             // Solve the challenge
             var (max, path) = PyramidSolver.FindMaxPath(array);
 
